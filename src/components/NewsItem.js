@@ -4,7 +4,7 @@ import React from 'react';
 const NewsItem = ({ title, description, imageUrl, newsUrl }) => {
   return (
     <div className='my-3'>
-      <div className="card" style={{ width: '25rem', height: '30rem' }}>
+      <div className="card" style={{ width: '20rem', height: '30rem' }}>
         <div className="card-img-container">
           <img
             src={!imageUrl ? "https://cdn.browshot.com/static/images/not-found.png" : imageUrl}

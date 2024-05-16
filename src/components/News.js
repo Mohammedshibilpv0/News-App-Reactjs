@@ -56,7 +56,7 @@ const News = () => {
         <>
           <div className="row">
             {currentArticles.map((element) => (
-              <div className="col-12 col-md-8 col-lg-5 col-xl-4 mt-2 d-flex justify-content-center" key={element.url}>
+              <div className="col- col-md-8 col-lg-5 col-xl-4 mt-2 d-flex justify-content-center" key={element.url}>
                 <NewsItem
                   title={element.title ? element.title : ""}
                   description={element.description ? element.description : ""}
