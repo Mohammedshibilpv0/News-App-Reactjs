@@ -13,7 +13,7 @@ const News = () => {
     async function fetchingData() {
       setLoading(true);  // Set loading to true before fetching data
       try {
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=${select}&apiKey=009cfaf2883842f39cfa7616d807fc03`);
+        const response = await axios.get(`https://saurav.tech/NewsAPI/top-headlines/category/${select}/in.json`);
         const arr = [];
         response.data.articles.forEach((news) => {
           arr.push(news);

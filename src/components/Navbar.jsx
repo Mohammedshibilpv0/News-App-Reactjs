@@ -6,7 +6,7 @@ import ToggleSwitch from './ToggleSwitch'; // Import the ToggleSwitch component
 export const selectedContext = createContext();
 
 const Navbar = () => {
-  const Category = ['General', 'Business', 'Entertainment', 'Health', 'Science', 'Technology', 'Sports'];
+  const Category = ['general', 'business', 'entertainment', 'health', 'science', 'technology', 'sports'];
   const [selected, setSelected] = useState('');
   const [dark, setDark] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -55,7 +55,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
               {Category.map((cate, index) => (
                 <li className="nav-item" key={index}>
                   <p className="nav-link active" aria-current="page" onClick={() => selectCategory(cate)}>{cate}</p>
